@@ -168,11 +168,15 @@
 
     .container {
       justify-content: center;
+      margin: 0 auto;
     }
   }
 
   .order-image {
     display: none;
+  }
+  .order-text{
+
   }
 
   .order-text, .form, .form-input, .order-button {
@@ -622,11 +626,18 @@
     width: 290px;
   }
 
-  .popup-info{
-
+  .popup-info, #popup-input-name, #popup-input-phone, #popup-button, .popup-checkbox-text{
+    width: calc(100vw - 60px);
   }
+
+
   .form-popup{
     padding: 22px 9px 20px;
+  }
+  #popup-close {
+    position: absolute;
+    top: 0;
+    right: 30px;
   }
 
 }

@@ -106,6 +106,7 @@ body {
   left: -32%;
   width: 32%;
   transition: all 1.3s;
+  display: grid;
 }
 
 .menu {
@@ -164,6 +165,8 @@ body {
 
   .phone {
     font-size: 16px;
+    color: white;
+    text-decoration: none;
   }
 
   .contacts-text {
@@ -217,7 +220,8 @@ body {
 }
 
 .logo {
-  justify-self: center;
+  //justify-self: center;
+  text-align: center;
 }
 
 #burger {
@@ -230,6 +234,8 @@ body {
 .phone {
   font-weight: 700;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .contacts-action {
@@ -398,6 +404,10 @@ body {
   display: grid;
   justify-content: space-between;
   margin: 70px 0 120px;
+  .container {
+    display: flex;
+   flex-direction: column;
+  }
 }
 
 .project-hidden {
@@ -513,7 +523,6 @@ body {
   cursor: pointer;
   margin-top: -50px;
   .d-flex-center ();
-  width: max-content;
   justify-self: center;
 
   span {
@@ -522,6 +531,7 @@ body {
     color: rgb(137, 137, 138);
     margin-right: 11px;
     transition: @1s;
+    text-align: center;
   }
 
   svg {
@@ -1131,6 +1141,7 @@ body {
   max-width: 407px;
   justify-self: center;
   position: relative;
+  margin: auto;
 }
 
 .thanks-order {
@@ -1195,7 +1206,7 @@ body {
   font-weight: 100;
   text-align: left;
   margin-left: 18px;
-
+  z-index: 1;
   a {
     color: white;
     font-weight: 300;
@@ -1206,7 +1217,10 @@ body {
   height: 1px;
   width: 1px;
   margin-right: 30px;
+  -moz-appearance:initial;
+  z-index: 1;
 }
+
 
 .input-checkbox::before {
   content: '';
@@ -1431,6 +1445,12 @@ body {
 
 .form-popup {
   margin-bottom: 0;
+  display: grid;
+  z-index: 4;
+
+  .form-input {
+    padding: 23px 25px 18px;
+  }
 }
 
 .popup-bg {
@@ -1465,15 +1485,9 @@ body {
   text-align: right;
   cursor: pointer;
   justify-self: flex-end;
+
 }
 
-.form-popup {
-  z-index: 4;
-
-  .form-input {
-    padding: 23px 25px 18px;
-  }
-}
 
 #thanks-popup {
   top: 40%;

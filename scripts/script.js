@@ -95,14 +95,14 @@ body.on('click', function (evt) {
 });
 
 function sidebarClose() {
-    if (parseInt(window.screen.width) > 767) {
+    if (parseInt(window.screen.width) > 1125) {
         sidebar.css('left', '-32%');
-    }
-    if (parseInt(window.screen.width) > 767) {
+    } else if (parseInt(window.screen.width) > 767) {
         sidebar.css('left', '-45%');
-    }
-    if (767 >= parseInt(window.screen.width) > 510) {
+    } else if (767 >= parseInt(window.screen.width) > 510) {
         sidebar.css('left', '-60%');
+    }else  {
+        sidebar.css('left', '-100%');
     }
 }
 
